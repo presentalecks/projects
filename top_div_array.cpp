@@ -29,7 +29,7 @@ int main()
 
 	populate_div_sales(div_sales, div_regions, 4);
 
-	// leave debug statement in final product
+	//leave debug statement in final product
 	cout << "debug print for array div_sales_array" << endl;
 	for (int i=0; i<4; i++) {
 		cout << div_sales[i] << endl;
