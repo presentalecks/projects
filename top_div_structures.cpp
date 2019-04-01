@@ -40,21 +40,21 @@ int main()
 
 }
  
-void populate_div_sales(float sales[], int size)
+void populate_div_sales(DIV div_info[], int size)
 {
 	for(int i = 0; i < size; i++)
 	{
-		cout << "Enter the sales for "<< names[i] << ": \n";
-		cin >> sales[i];
-		if (sales[i] < 0)
+		cout << "Enter the sales for "<< div_info.name[i] << ": \n";
+		cin >> div_info.sales[i];
+		if (div_info.sales[i] < 0)
 			{
 				cout << "No sale should be under $0. Please re-enter the sales: \n";
-				cin >> sales[i];
+				cin >> div_info.sales[i];
 			}
 	}
 }
 
-int findHighest(float sales[], int size)
+int findHighest(DIV div_info[], int size)
 {
 	float greatestSalesAmount = 0;
 	int sales_index;
@@ -62,15 +62,15 @@ int findHighest(float sales[], int size)
 	{
 		if (sales[i] > greatestSalesAmount )
 		{
-			greatestSalesAmount = sales[i];
+			greatestSalesAmount = top_div.sales[i];
 			sales_index = i;
 		}
 	} 
 	return sales_index;
 }
 
-void print_result(float sales[], string names[], int index)
+void print_result(DIV div_info[], int index)
 {
-	cout << "The division with the highest sales is " << names[index] << " with: $"<< sales[index]<< endl;
+	cout << "The division with the highest sales is " << div_info.name[index] << " with: $"<< sales[index]<< endl;
 
 }

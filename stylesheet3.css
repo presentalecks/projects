@@ -1,6 +1,6 @@
 body
 {
-font-family: "WorkSans-Regular";
+font-family: "arial";
 margin:0 auto;
 }
 ul.first{
@@ -8,9 +8,10 @@ ul.first{
 	background-color:#13cadb;
 	display:inline-block;
 	text-align: center;
-	margin:0 auto;
+	margin-left:0 auto;
+	margin-right:0 auto;
 	position:center center;
-	
+
 }
 .first {
 position:fixed;
