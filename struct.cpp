@@ -7,7 +7,7 @@ struct DIV
 {
 	string name;
 	float sales;
-} test[4];
+} test[4];git
 
 int main()
 {
