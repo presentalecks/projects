@@ -94,5 +94,12 @@ void parse (string qs, FIELDS f_name_value_pairs [])
 //*******************************************
 string param(string lookUp, FIELDS f_name_value_pairs[], int f_cnt)
 {	
-
+	int counter = 0;
+	while (counter < 1)
+	{
+	if (f_name_value_pairs[].name == lookUp)
+		{
+			
+		}
+	}
 }
