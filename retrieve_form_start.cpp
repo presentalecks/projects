@@ -18,7 +18,7 @@ struct FIELDS
 	string value;
 }; 
 
-const int cnt = 3;	//cnt should be set to the number of fields the html form contains
+const int cnt = 5;	//cnt should be set to the number of fields the html form contains
 
 // Prototypes
 void parse(string, FIELDS []);
@@ -44,14 +44,16 @@ int main()
 	} 
  
 
-/*
+
 	// Three fields data are retrieved from the param function
 	string first = param("first", name_value_pairs, cnt);
 	string last = param("last", name_value_pairs, cnt);
-	string color = param("color", name_value_pairs, cnt);
-*/
-	// code an HTML page, which includes the three fields
-	// received.
+	string chill = param("chill", name_value_pairs, cnt);
+	string hype = param("hype", name_value_pairs, cnt);
+	string anti = param("anti", name_value_pairs, cnt);
+
+	cout << "first:" << first << endl;
+	cout << "chill:" << chill << endl;
 	
     return 0;
 }
@@ -93,6 +95,24 @@ void parse (string qs, FIELDS f_name_value_pairs [])
 // field name
 //*******************************************
 string param(string lookUp, FIELDS f_name_value_pairs[], int f_cnt)
-{	
+{
+	int counter = 0;
+	string value;
+	bool x = false;
 
+	while (x != true)
+	{
+		if (f_name_value_pairs[counter].name == lookUp)
+		{
+				value = f_name_value_pairs[counter].value;
+
+				x = true;
+		}
+		else
+		{
+			counter ++;
+		}
+	
+	}
+  return value;
 }
