@@ -1,0 +1,58 @@
+html {
+	font-family:arial;
+	background-image: url(https://wp.freedomofcreation.co.uk/dandev/wp-content/uploads/sites/101/2018/10/best-poly-backgrounds.png);
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+body
+{
+	text-align: center;
+	margin: 0 auto;
+}
+
+h2
+{
+	border:10px solid transparent;
+	width:200px;
+	margin:auto;
+	background-color:black;
+	border-radius:30px;
+	position: relative;
+	top:40px;
+	color:white;
+}
+
+form 
+{
+	font-weight: bold;
+}
+
+#d1 
+{
+	position:relative;
+	top:80px;
+}
+#d2
+{
+	position:relative;
+	top:100px;
+}
+#d3 
+{
+	position:relative;
+	top:120px;
+}
+#d4
+{
+	position:relative;
+	top:170px;
+}
+#d5 
+{
+	position:relative;
+	top:190px;
+}

@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link href="style.css" rel="stylesheet" type="text/css">
 		<title>Three Form Fields</title>
 	</head>
 <body>
+	<h2> Use one word per field</h2>
 	<form action="retrieve_form_start.cgi" method=GET>
-		Use one word per field: <br><br>
+		<div id = "d1">
 		First Name: <br>
 			<input type="text" name="first"><p>
+		</div>
+		<div id = "d2">
 		Last Name:<br>
 			<input type="text" name="last"><p>
-		Favorite Color:<br>
-			<input type="text" name="color"><p>
-		Favorite Food:<br>
-			<input type="text" name="Food">
+		</div>
+		<div id = "d3">
+		<select name = "style">
+		<option value = "chill" >Chill</option>
+		<option value = "old" >Old School</option>
+		<option value = "pop" >Anti Pop</option>
+		</select>
+	</div>
+		<div id = "d4">
+			<br>
 			<p><input type="submit" name="submit">
+		</div>
 	</form>
 </body>
 </html>
